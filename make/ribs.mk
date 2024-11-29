@@ -17,7 +17,7 @@
 # along with RIBS.  If not, see <http://www.gnu.org/licenses/>.
 
 ifndef OPTFLAGS
-OPTFLAGS=-O3
+OPTFLAGS=-O3 -march=native -flto -fno-stack-protector -fomit-frame-pointer
 endif
 ifndef OBJ_SUB_DIR
 OBJ_DIR=../obj
